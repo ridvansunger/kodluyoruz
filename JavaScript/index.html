@@ -26,7 +26,7 @@
     
     <h2 id="info"></h2>
 
-    <div class="container">  
+    <!-- <div class="container">  
       <div><p id="text">SUBMIT FORM </p> </div>
         <form action="/action_page.php" class="inputText">
           <label for="fname" id="l1">First name:</label><br>
@@ -48,9 +48,25 @@
         </form>
       </div>
     </div> 
-   
+    -->
+
+     <form onsubmit="sendHandle(event)">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="lastname">Lastname</label>
+          <input type="text" name="lastname" id="lastname">
+        </div>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+
        <!-- <script src="js/01-js.js"></script> -->
-        <script src="js/function.js"></script>
+        <!-- <script src="js/function.js"></script> -->
+        <script src="js/form.js"></script>
 
 </body>
 </html>
